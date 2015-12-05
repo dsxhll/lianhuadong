@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <meta name="description" content="">
+                        <meta name="author" content="">
+                            
+                            <title>私人定制</title>
+                            <script src="js/jquery.js"></script>
+
+                            <link href="css/order.min.css" rel="stylesheet">
+                                <link href="css/order.css" rel="stylesheet">
+                                    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+                                        <link href="css/loading.css" rel="stylesheet"   type="text/css" >
+                                            
+                                            <!--[if lt IE 9]>
+                                             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                                             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+                                             <![endif]-->
+    </head>
+    
+    
+    <body>
+        
+        
+        <script type="text/javascript">
+            $(function(){
+              $("#btn").click(function(){
+                              $("loading").hide();                           });
+              });
+            
+            </script>
+        <button id="btn" value="a" />
+        
+        <div id="loading" class="cssload-dots">
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+        </div>
+        
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+                    <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+                </filter>
+            </defs>
+        </svg>
+        
+        
+        
+        
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script>
+            $('.carousel').carousel({
+                                    interval: 5000 //changes the speed
+                                    })
+            </script>
+        
+    </body>
+    
+</html>
